@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'achat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+        .buy {
+            background-color: rgb(213, 216, 216);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            border: 1px solid #2c2828;
+            padding: 15px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            background-color: #aae2f6;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <script src="script.js"></script>
+        <nav>
+            <div class="container ">
+                <h2 class="logo">AutoShop</h2>
+                <ul class="menu">
+                    <li><a href="web.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Modèles</a>
+                        <ul class="submenu">
+                            <li><a href="web.html#compactes">Compactes</a></li>
+                            <li><a href="web.htm#suv">SUV</a></li>
+                            <li><a href="web.html#berlines">Berlines</a></li>
+                            <li><a href="web.html#breaks">Breaks</a></li>
+                            <li><a href="web.html#coupes">Coupés</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offres.html">Offres actuelles</a></li>
+                    <li><a href="info.html">Entreprise</a></li>
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+    <div class="buy">
+        <main class="container mt-5">
+            
+    
+            <form id="contactForm">
+                <h3>Formulaire de contact</h1>
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" class="form-control" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateNaissance">Date de naissance</label>
+                    <input type="date" class="form-control" id="dateNaissance" name="dateNaissance" required>
+                </div>
+                <div class="form-group">
+                    <label for="marque">Marque</label>
+                    <select class="form-control" id="marque" name="marque" required>
+                        <option value="">Sélectionnez une marque</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Audi">Audi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="voitureChoisie">Voiture choisie</label>
+                    <input type="text" class="form-control" id="voitureChoisie" name="voitureChoisie" readonly>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+      
+        </main>
+    
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            // Récupération des paramètres de l'URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var voitureNom = urlParams.get('voitureNom');
+
+            // Pré-remplissage des champs du formulaire
+            $('#voitureChoisie').val(voitureNom);
+        });
+    </script>
+</body>
+</html>

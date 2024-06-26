@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres actuelles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <script src="script.js"></script>
+        <nav>
+            <div class="container ">
+                <h2 class="logo">AutoShop</h2>
+                <ul class="menu">
+                    <li><a href="web.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Modèles</a>
+                        <ul class="submenu">
+                            <li><a href="web.html#compactes">Compactes</a></li>
+                            <li><a href="web.html#suv">SUV</a></li>
+                            <li><a href="web.html#berlines">Berlines</a></li>
+                            <li><a href="web.html#breaks">Breaks</a></li>
+                            <li><a href="web.html#coupes">Coupés</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="offres.html">Offres actuelles</a></li>
+                    <li><a href="info.html">Entreprise</a></li>
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="offres">
+            <h1>Offres actuelles</h1>
+            <p>Découvrez nos offres spéciales sur une sélection de modèles. Ne manquez pas ces opportunités exceptionnelles pour acquérir la voiture de vos rêves à un prix avantageux.</p>
+            <!-- Add content for the offers here -->
+        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+             
+                <div class="carousel-item active">
+                 
+                 <video class="d-block w-100" autoplay muted loop>
+                    <source src="video/bmi7.mp4" type="video/mp4">
+                    
+                  </video>
+                    <div class="carousel-caption d-none d-md-block">
+                       
+                    <h5>Nouvelle BMW i7 </h5>
+                    <p> A partir de 227 999 €
+                    </p>
+                </div>
+               </div>
+           
+             <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="video/AMG GT COUPE.mp4" type="video/mp4">
+                    
+                  </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nouveau Mercedes‑AMG GT Coupé 63 S E PERFORMANCE. </h5>
+                    <p>à partir de
+                        229 050,00 €
+                       </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop>
+                  <source src="video/audi rs3.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audi Rs3 .</h5>
+                    <p>à partir de 129 050,00 € </div>
+              </div>
+          
+           
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/suv10.png" class="card-img-top" alt="Car 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes‑AMG GLC Coupe</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 76 900 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="Mercedes‑AMG GLC Coupe">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/x4M.png" class="card-img-top" alt="Car 2">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW X4 M</h5>
+                            <p class="card-text">Essence•Diesel•Hybride Rechargeable</p>
+                            <p class="card-text"><strong>à partir de 118 800 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="BMW X4 M">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/amg gt.webp" class="card-img-top" alt="Car 3">
+                        <div class="card-body">
+                            <h5 class="card-title">AMG GT Mercedes-Benz</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 129 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="AMG GT Mercedes-Benz">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/i5.png" class="card-img-top" alt="Car 4">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW i5</h5>
+                            <p class="card-text">Electrique</p>
+                            <p class="card-text"><strong>à partir de 76 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="BMW i5">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/i8.png" class="card-img-top" alt="Car 5">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW i7</h5>
+                            <p class="card-text">Electrique</p>
+                            <p class="card-text"><strong>à partir de 139 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="BMW i7">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="sale/m4.png" class="card-img-top" alt="Car 6">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M4</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 95 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="BMW M4">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/Q5.png" class="card-img-top" alt="Car 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi Q5</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 48 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="Audi Q5">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/Rs e-tron GT.png" class="card-img-top" alt="Car 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi Rs e-tron GT</h5>
+                            <p class="card-text">Electrique</p>
+                            <p class="card-text"><strong>à partir de 148 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="Audi Rs e-tron GT">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/RS5COUPE.png" class="card-img-top" alt="Car 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi RS5</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 140 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="Audi RS5">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+       
+
+       
+    </main>
+    
+
+  
+
+
+    <footer>
+      <marquee> <p>&copy; 2024 Autoshop. Tous droits réservés. </p></marquee>  
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            // Gestion des clics sur les boutons "Acheter"
+            $('.acheter-btn').click(function() {
+                // Récupération du nom de la voiture à partir des attributs data
+                var voitureNom = $(this).data('nom-voiture');
+    
+                // Construction de l'URL avec les paramètres
+                var url = 'formulaire.html?voitureNom=' + encodeURIComponent(voitureNom);
+    
+                // Redirection vers la nouvelle page de formulaire
+                window.location.href = url;
+            });
+        });
+    </script>
+    
+</body>
+</html>
