@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoShop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <script src="js/script.js"></script>
+            <nav>
+                <div class="container">
+                    <h2 class="logo">AutoShop</h2>
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Modèles</a>
+                            <ul class="submenu">
+                                <li><a href="#compactes">Compactes</a></li>
+                                <li><a href="#suv">SUV</a></li>
+                                <li><a href="#berlines">Berlines</a></li>
+                                <li><a href="#breaks">Breaks</a></li>
+                                <li><a href="#coupes">Coupés</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="offres.html">Offres actuelles</a></li>
+                        <li><a href="info.html">Entreprise</a></li>
+                    </ul>
+                   
+                </div>
+            </nav>
+       
+    </header>
+    <main>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="video/GLE 63.mp4" type="video/mp4">
+                    
+                  </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mercedes-Benz  </h5>
+                    <p> Découvrez l'élégance et le confort ultime avec notre gamme Mercedes-Benz, synonyme de luxe et de performance inégalés.</p>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="video/aaudi A8.mp4" type="video/mp4">
+                    
+                  </video>          
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audi </h5>
+                    <p>Explorez la fiabilité et l'innovation avec Audi, où chaque modèle incarne l'ingénierie avancée et le design moderne.</p>
+                  </div>
+            </div>
+              <div class="carousel-item">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="video/2024 BMW XM Label - New Ultra XM by Larte Design.mp4" type="video/mp4">
+                    
+                  </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>BMW </h5>
+                    <p>Plongez dans l'alliance parfaite entre performance dynamique et sophistication avec BMW, où chaque véhicule est conçu pour ceux qui exigent le meilleur.</p>
+                  </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="modele">
+            <h1>Modèles</h1>
+            <p>Explorez notre vaste sélection de voitures de luxe, conçues pour satisfaire toutes vos exigences en matière de style, de performance et de confort. Que vous recherchiez une voiture compacte pour la ville, un SUV spacieux pour la famille, une berline élégante pour les affaires, un break pratique pour les aventures ou un coupé sportif pour le plaisir, nous avons le modèle qui correspond à vos besoins et à votre style de vie.</p>
+              <img src="video/Mercedes ahead of BMW in August sales in the U_S_.jpeg" alt="modele">
+          </div>
+    
+
+    
+            <section id="compactes" class="car-list">
+                <!-- Contenu pour les voitures compactes -->
+                <h2>Compactes </h2>
+                <p>Nos voitures compactes sont parfaites pour la vie urbaine, offrant une maniabilité exceptionnelle et un design moderne. Découvrez des modèles qui allient efficacité et style pour répondre à tous vos besoins quotidiens.</p>
+                
+                <section class="container my-5">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="compactes/comp2.webp" class="card-img-top" alt="Car 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Série 1</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de 38 900 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="BMW Série 1">Acheter</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="compactes/comp3.webp" class="card-img-top" alt="Car 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Série 2 Active Tourer</h5>
+                                    <p class="card-text">Essence•Diesel•Hybride Rechargeable</p>
+                                    <p class="card-text"><strong>à partir de 38 800 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="BMW Série 2 Active Tourer">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="compactes/comp4.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+                                
+        
+        
+        
+                                    <h5 class="card-title">  Mercedes Classe A Compacte.</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        39 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Classe A Compacte.">Acheter</button>
+                    
+
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="compactes/comp5.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title"> Mercedes Classe B Compacte.</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        48 149,19 €</strong></p>
+                                   <button class="btn acheter-btn" data-nom-voiture=" Classe B Compacte.">Acheter</button>
+
+                                    </div>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </section>
+                  <!--Fin section compacte-->
+            </section>
+         
+    
+            <section id="suv" class="car-list">
+
+              <!-- Contenu pour les SUV -->
+              <h2>SUV</h2>
+              <p>Explorez notre sélection de SUV robustes et polyvalents.Que ce soit pour les aventures en plein air ou les trajets en ville, nos SUV offrent un espace généreux, des technologies de pointe et une performance impressionnante.</p>
+            
+            <section class="container my-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv1.webp" class="card-img-top" alt="Car 1">
+                            <div class="card-body">
+                                <h5 class="card-title">BMW iX</h5>
+                                <p class="card-text">Électrique</p>
+                                <p class="card-text"><strong>à partir de 84 200 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" Bmw ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv2.webp" class="card-img-top" alt="Car 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BMW X1 </h5>
+                                <p class="card-text">Essence•Diesel•</p>
+                                <p class="card-text"><strong>à partir de 43 650 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" BMW X1 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv3.webp" class="card-img-top" alt="Car 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BMW iX1</h5>
+                                <p class="card-text">Électrique</p>
+                                <p class="card-text"><strong>à partir de 45 887 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" BMW iX1 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv4.webp" class="card-img-top" alt="Car 3">
+                            <div class="card-body">
+                            
+    
+    
+    
+                                <h5 class="card-title"> BMW X2</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    47 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" BMW X2 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suvx3.webp" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  BMW X3</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    48 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" BMW X3  ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv6.webp" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  BMW X4</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    62 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture="  BMW X4 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv7.webp" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  BMW X5</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    90 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture="  BMW X5 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv10.webp" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  BMW X7</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    110 000€</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" BMW X7 ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv8.png" class="card-img-top" alt="Car 3">
+                            <div class="card-body">
+                            
+    
+    
+    
+                                <h5 class="card-title">  Mercedes-Benz GLA</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    44 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" Bmw ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv9.png" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  Mercedes-Benz EQB.</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    48 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" Mercedes-Benz EQB. ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv10.png" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  GLE Coupe Mercedes‑AMG.</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    68 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture="  GLE Coupe Mercedes‑AMG. ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="suv/suv4.png" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title">  Classe G Mercedes-Benz.</h5>
+                                <p class="card-text">Essence•Diesel</p>
+                                <p class="card-text"><strong>à partir de
+                                    148 149,19 €</strong></p>
+                                <button class="btn acheter-btn" data-nom-voiture=" Classe G Mercedes-Benz. ">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin section SUV-->
+            </section>
+             
+            </section>
+    
+            <section id="berlines" class="car-list">
+
+                <!-- Contenu pour les berlines -->
+                <h2>Berlines</h2>
+                <p>Nos berlines élégantes et sophistiquées offrent un confort incomparable et une conduite dynamique. Idéales pour les longs trajets et les déplacements quotidiens, elles incarnent le luxe et la performance.</p>
+       
+                <!--Debut-->
+                <section class="container my-5">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/ber1.png" class="card-img-top" alt="Car 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Serie 3</h5>
+                                    <p class="card-text">Électrique</p>
+                                    <p class="card-text"><strong>à partir de 60 200 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 3 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/ber2.png" class="card-img-top" alt="Car 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Serie 5 </h5>
+                                    <p class="card-text">Essence</p>
+                                    <p class="card-text"><strong>à partir de 63 650 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 5Bmw ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/ber3.png" class="card-img-top" alt="Car 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Serie 7</h5>
+                                    <p class="card-text">Essence</p>
+                                    <p class="card-text"><strong>à partir de 75 887 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 7 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="coupe/coupe2.png" class="card-img-top" alt="Car 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW i4</h5>
+                                    <p class="card-text">Electrique</p>
+                                    <p class="card-text"><strong>à partir de 57 800 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" BMW i4 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="sale/i5.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+                                
+        
+        
+        
+                                    <h5 class="card-title"> BMW i5.</h5>
+                                    <p class="card-text">Electrique</p>
+                                    <p class="card-text"><strong>à partir de
+                                        75 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  BMW i5. ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/ber4.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+                                
+        
+        
+        
+                                    <h5 class="card-title"> BMW i7</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        128 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  BMW i7 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/bercA.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title"> Mercedes‑AMG Classe E</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        48 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  Mercedes‑AMG Classe E ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/bercC.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title">  Mercedes-Benz Classe C</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        80 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Mercedes-Benz Classe C ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="audi/A3.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title">  Audi A3 </h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        40 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  Audi A3  ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="berline/bercS.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title"> Mercedes Classe S</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        110 000€</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Mercedes Classe S ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="audi/A6.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title"> Audi A6.</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        48 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  Audi A6. ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="audi/A4.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title">  Audi A4</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        68 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Audi A4 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="audi/A8.png" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title"> Audi A8</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        98 149 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Audi A8 ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <!--Fin section SUV-->
+                </section>
+
+                <!--Fin-->
+            </section>
+    
+            <section id="breaks" class="car-list">
+                 <!-- Contenu pour les breaks -->
+                 <h2>Breaks</h2>
+                 <p>Découvrez nos breaks spacieux qui allient praticité et élégance. Avec un grand espace de chargement et un confort de conduite supérieur, nos breaks sont parfaits pour les familles et les aventuriers.</p>
+                 <section class="container my-5">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="breaks/breakCB4.png" class="card-img-top" alt="Car 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">   Mercedes Classe C Break  </h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de 50 900 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Mercedes Classe C Break ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="breaks/breakS5.png" class="card-img-top" alt="Car 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">BMW Serie 5 Break</h5>
+                                    <p class="card-text">Essence•Diesel•Hybride Rechargeable</p>
+                                    <p class="card-text"><strong>à partir de 74 800 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 5 Break ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="breaks/brekS3.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+          
+                                    <h5 class="card-title">  Bmw serie 3 Break</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        50 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture="  Bmw serie 3 Break ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="breaks/brekC2.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+                                
+        
+        
+        
+                                    <h5 class="card-title">  AMG GT Mercedes-Benz.</h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        39 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" AMG GT Mercedes-Benz. ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="breaks/brekCA3.png" class="card-img-top" alt="Car 3">
+                                <div class="card-body">
+                                
+        
+        
+                                    <h5 class="card-title">CLA shooting Brake </h5>
+                                    <p class="card-text">Essence•Diesel</p>
+                                    <p class="card-text"><strong>à partir de
+                                        49 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" CLA shooting Brake ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="sale/comp3.webp" class="card-img-top" alt="Car 4">
+                                <div class="card-body">
+                                   
+                                    <h5 class="card-title">  Bmw Serie 5 Touring </h5>
+                                    <p class="card-text">Hybride Rechargeable</p>
+                                    <p class="card-text"><strong>à partir de
+                                        74 149,19 €</strong></p>
+                                    <button class="btn acheter-btn" data-nom-voiture=" Bmw Serie 5 Touring ">Acheter</button>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                 </section> 
+               
+            </section>
+    
+            <section id="coupes" class="car-list">
+                <!-- Contenu pour les coupés -->
+                <h2>Coupés</h2>
+                <br>
+                <p>Plongez dans l'univers de nos coupés sportifs et raffinés. Conçus pour les amateurs de performance et de design, ces modèles offrent une expérience de conduite exaltante et un style inégalé.</p>
+                
+                
+          <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="coupe/coupe1.png" class="card-img-top" alt="Car 1">
+                        <div class="card-body">
+                            <h5 class="card-title"> BMW Serie 2 Coupe </h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de 58 900 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 2 Coupe ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="coupe/coupe4.png" class="card-img-top" alt="Car 3">
+                        <div class="card-body">
+                        
+
+
+
+                            <h5 class="card-title">  BMW Serie 8</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                119 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture="  BMW Serie 8 ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="coupe/grcoup3.png" class="card-img-top" alt="Car 4">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">  BMW Serie 2 Grand coupe  </h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                58 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture=" BMW Serie 2 Grand coupe  ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/A5.png" class="card-img-top" alt="Car 3">
+                        <div class="card-body">
+                        
+
+
+
+                            <h5 class="card-title">  Audi A5</h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                54 149,19 €</strong></p>
+                               <button class="btn acheter-btn" data-nom-voiture="Audi A5 ">Acheter</button>
+                        </div>
+                    </div>
+                </div>  
+              <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/RS5.png" class="card-img-top" alt="Car 4">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">  Audi RS5 </h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                83 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture=" Audi RS5 ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/RS6.png" class="card-img-top" alt="Car 4">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">  Audi  RS6 </h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                48 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture=" Audi  RS6 ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="audi/RS7.png" class="card-img-top" alt="Car 4">
+                        <div class="card-body">
+                           
+                            <h5 class="card-title">  Audi RS7 </h5>
+                            <p class="card-text">Essence•Diesel</p>
+                            <p class="card-text"><strong>à partir de
+                                48 149,19 €</strong></p>
+                            <button class="btn acheter-btn" data-nom-voiture=" Audi RS7  ">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </section> 
+              
+            </section>
+       
+   
+
+       
+    </main>
+   
+    <footer>
+        <marquee> <p>&copy; 2024 Autoshop. Tous droits réservés. </p></marquee>  
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+      </footer>
+   
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <style>
+    .back-to-top i {
+        font-size: 24px;
+        color: white;
+    }
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+            // Gestion des clics sur les boutons "Acheter"
+            $('.acheter-btn').click(function() {
+                // Récupération du nom de la voiture à partir des attributs data
+                var voitureNom = $(this).data('nom-voiture');
+    
+                // Construction de l'URL avec les paramètres
+                var url = 'formulaire.html?voitureNom=' + encodeURIComponent(voitureNom);
+    
+                // Redirection vers la nouvelle page de formulaire
+                window.location.href = url;
+            });
+        });
+    </script>
+    <script>
+        //back on top
+        document.addEventListener('DOMContentLoaded', function() {
+            var backToTopButton = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+
+</body>
+</html>
